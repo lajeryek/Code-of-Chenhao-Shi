@@ -1,19 +1,3 @@
-d =320; % Alice向服务器Bob传输的数据量为320bit
-B = 5e6; % 带宽Hz
-Ts = 3e-5; % 符号长度 单位s
-T = 60e-3; % 帧长 单位s
-f_cpu_max =0.9e9; % 最大CPU频率
-PK=30;%transmit power
-k = 10^(-11);%硬件系数
-% 描述两个接收端的信道质量，认为Bob好于窃听的Eve,分别从传输距离r，噪声大小Ns以及信道增益z考量
-% Ns_Bob=-164;%Bob的噪声大小
-% Ns_Eve=-163;%Eve的噪声大小
-% r_Bob=135;%传输距离
-% r_Eve=140;%传输距离
-% z_Bob=2.5428;
-% z_Eve=2.3428;
-line_styles = {'-o', '--x', '-.s', ':d', '-^', '-v'}; % Line styles for each curve
-v = 1e-4;%UE解码失误概率
 cnt = 1;%数组索引
 N_array=[1,2,3,4,5,6,7];
  figure;
