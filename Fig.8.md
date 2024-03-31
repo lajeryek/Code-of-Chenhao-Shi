@@ -1,16 +1,3 @@
-d =920; % Alice向服务器Bob传输的数据量为320bit
-B = 5e6; % 带宽Hz
-Ts = 3e-5; % 符号长度 单位s
-T = 60e-3; % 帧长 单位s
-f_cpu_max =0.9e9; % 最大CPU频率
-PK=30;%transmit power
-k = 10^(-11);%硬件系数
-e_tot_max_array=[1e-8,1e-5,1e-4,0.5e-3,1e-3,1.5e-3,2e-3,3e-3,5e-3,7e-3,8.5e-3,1e-2];
-line_styles = {'-o', '--x'}; % Line styles for each curve
-v = 1e-5;%UE解码失误概率
-cnt = 1;%数组索引
-tk=3e-3;
-
 for idx=1:1:3
    if idx==1
     N=2;
