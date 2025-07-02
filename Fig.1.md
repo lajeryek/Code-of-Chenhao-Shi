@@ -1,3 +1,4 @@
+我修改了代码
 d = 320; % Alice向服务器Bob传输的数据量为320bit
 B = 5e6; % 带宽Hz
 Ts = 3e-5; % 符号长度 单位s
@@ -10,8 +11,8 @@ Ns_Bob=-164;%Bob的噪声大小
 Ns_Eve=-163;%Eve的噪声大小
 r_Bob=135;%传输距离
 r_Eve=140;%传输距离
- z_Bob=2.5428;
- z_Eve=2.4428;
+z_Bob=2.5428;
+z_Eve=2.4428;
 
 PL_Bob=17.0+40*log10(r_Bob);%路径损耗_dBm
 PL_Eve=17.0+40*log10(r_Eve);
